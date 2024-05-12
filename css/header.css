@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freeman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+header h2 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+header nav ul li {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+header h2 {
+  font-weight: 400;
+  font-style: normal;
+}
+
+header nav ul, header nav {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  justify-content: space-between;
+  min-height: 73px;
+  height: 10vh;
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+header h2 {
+  color: rgb(223, 216, 216);
+  font-size: 2em;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+}
+header nav .navText li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 1.4em;
+  font-size: 1.3em;
+  transition-duration: 0.5s;
+}
+header nav .navText li:hover {
+  border-bottom: 2px solid rgb(49, 46, 46);
+}
+header nav .socialMediaIcons li {
+  margin-left: 0.7em;
+  font-size: 1.6em;
+}
+header nav .socialMediaIcons li #faceLogo {
+  transition-duration: 0.5s;
+}
+header nav .socialMediaIcons li #faceLogo:hover {
+  color: #0866FF;
+}
+header nav .socialMediaIcons li #twitLogo {
+  transition-duration: 0.5s;
+}
+header nav .socialMediaIcons li #twitLogo:hover {
+  color: #1DA1F2;
+}
+header nav .socialMediaIcons li #instaLogo {
+  transition-duration: 0.5s;
+}
+header nav .socialMediaIcons li #instaLogo:hover {
+  color: #E1306C;
+}/*# sourceMappingURL=header.css.map */

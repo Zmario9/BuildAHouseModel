@@ -1,0 +1,89 @@
+//Imports 
+//@use './colors' as colors;
+//@import 'colors';
+// @use 'colors' as c;
+@use 'redundantElements' as re;
+//Maps
+
+//Mixins
+@mixin socialMediaColor($color){
+    transition-duration: .5s;
+    &:hover{
+        color: map-get(re.$headerColors, $color);
+    }
+}
+
+%headerFont{
+    @extend %logoFont;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%disFlexRowNowrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+%disFlexHcentered {
+    display: flex;
+    align-items: center;
+}
+
+header{
+    @extend %disFlexHcentered;
+    justify-content: space-between;
+    min-height:73px;
+    height: 10vh;
+    padding: {
+        right: 5vw;
+        left: 5vw;
+    }
+    h2{
+        @extend %headerFont;
+        color: map-get(re.$headerColors, "lightGrey");
+        font-size: 2em;
+    }
+    nav {
+        @extend %disFlexRowNowrap;
+        ul{
+            @extend %disFlexRowNowrap;
+            list-style: none;
+            li{
+                @extend %navFont;
+                cursor: pointer;
+                border-bottom: 2px solid transparent;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .navText{
+            li{
+                padding: {
+                    top: .5em;
+                    bottom: .5em;
+                }
+                margin-right: 1.4em;
+                font-size: 1.3em;
+                transition-duration: .5s;
+                &:hover{
+                    border-bottom: 2px solid map-get(re.$headerColors, "darkGrey");         
+                }
+            }
+        }
+        .socialMediaIcons{
+            li{
+                margin-left: .7em;
+                font-size: 1.6em;
+                #faceLogo{
+                    @include socialMediaColor("facebookColor");
+                }
+                #twitLogo{
+                    @include socialMediaColor("twitterColor");
+                }
+                #instaLogo{
+                    @include socialMediaColor("instagramColor");   
+                }
+            }
+        }
+    }
+}

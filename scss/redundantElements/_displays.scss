@@ -1,0 +1,31 @@
+%centeredContentFlexRowNowrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+%displayFlexRowNowrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+%displayFlexRowWrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+%displayFlexColumnNowrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+%displayFlexColumnWrap {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+%displayFlexHcentered {
+    display: flex;
+    align-items: center;
+}

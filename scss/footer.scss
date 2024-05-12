@@ -1,0 +1,56 @@
+// @use 'colors' as c;
+// @use 'displays' as d;
+
+@use 'redundantElements' as re;
+
+footer{
+    @extend %centeredContentFlexRowNowrap;
+    padding: {
+        left: 3em;
+        right: 3em;
+        bottom:1em;
+        top:3em
+    }
+    article{
+        @extend %displayFlexColumnNowrap;
+        @extend %buildingFont;
+        position:relative;
+        overflow: hidden;
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+              background-color: map-get($map: re.$footerColors, $key: "color#{$i}");
+            }
+        }
+        padding: {
+            top: 1.5em;
+            bottom: 1em;
+            right: 4em;
+            left: 2em;
+        }
+        color: re.$whiteColor;
+        h3{          
+            font-size: 3em;
+            margin: {
+                bottom: .5em;
+            }
+        }
+        span{
+            font-size: 1.5em;
+            margin: {
+                bottom: .5em;
+            }
+        }
+        p{
+            font-size: 1em;
+            margin: {
+                bottom: 1.7em;
+            }
+        }
+        ion-icon{
+            font-size: 4em;
+            position: relative;
+            left:-7px;
+            cursor: pointer;
+        }
+    }
+}

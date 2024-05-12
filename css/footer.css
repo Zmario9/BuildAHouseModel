@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freeman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer article {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+footer article {
+  font-family: "Freeman", sans-serif;
+}
+
+footer {
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 1em;
+  padding-top: 3em;
+}
+footer article {
+  position: relative;
+  overflow: hidden;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  padding-right: 4em;
+  padding-left: 2em;
+  color: #fff;
+}
+footer article:nth-child(1) {
+  background-color: #FF6817;
+}
+footer article:nth-child(2) {
+  background-color: #F43401;
+}
+footer article:nth-child(3) {
+  background-color: #282B33;
+}
+footer article:nth-child(4) {
+  background-color: #535B64;
+}
+footer article h3 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+footer article span {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+footer article p {
+  font-size: 1em;
+  margin-bottom: 1.7em;
+}
+footer article ion-icon {
+  font-size: 4em;
+  position: relative;
+  left: -7px;
+  cursor: pointer;
+}/*# sourceMappingURL=footer.css.map */
